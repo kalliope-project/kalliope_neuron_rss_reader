@@ -4,9 +4,8 @@
   gather_facts: no
   connection: local
 
-  tasks:
-    - name: "Install pip dependencies"
-      pip:
-        name: feedparser
-        version: 5.2.1
-
+- name: "Install pip dependencies"
+    pip:
+      name: "feedparser"
+      version: 5.2.1
+      executable: pip3
